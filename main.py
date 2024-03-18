@@ -7,12 +7,10 @@ import cvzone
 
 
 # "IP:PORT/video For Ip webcam
-
-
 # Initialize the webcam
-cap = cv2.VideoCapture('http://192.0.0.4:8080/video',cv2.CAP_FFMPEG)  # Change the index as needed
+# cap = cv2.VideoCapture('[Ipadr:port]',cv2.CAP_FFMPEG)  # Change the index as needed
 
-# cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(1)
 
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)  # Width set for 480p
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)  # Height set for 480p
